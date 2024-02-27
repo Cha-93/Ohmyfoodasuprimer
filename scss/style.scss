@@ -1,0 +1,713 @@
+$background-gray: #f6f6f6;
+$location-background-color: #eaeaea;
+$navbar-color: #ffffff;
+$footer-background-color: #353535;
+
+$calltoaction-color-1: #e06fda;
+$calltoaction-color-2: #a65cdb;
+
+$small-font-size: 12px;
+$medium-font-size: 14px;
+$large-font-size: 18px;
+
+html, body{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.header-arrow{
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%)
+}
+
+.numero {
+    background-color: #9356DC;
+    border-radius: 50%;
+}
+
+
+
+body{
+    section:nth-of-type(2) {
+        background-color: $background-gray;
+    }
+    
+    header{
+        i{
+            z-index: 9999;
+            top: 10px;
+            left: 10px;
+        }
+    }
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: $navbar-color;
+    box-shadow: 0 4px 4px -1px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+    
+    img{
+        height: 30px;
+    }
+}
+
+#location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $location-background-color;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    
+    i{
+        padding-right: 5px;
+    }
+}
+
+#hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-color: $background-gray;
+    
+    h1{  
+        font-family: 'Roboto', sans-serif;
+        font-weight: 700;
+    }
+    
+    p{
+        color: darkslategray;
+    }
+    
+    button{
+        color: white;
+        
+        background: linear-gradient(to bottom, $calltoaction-color-1, $calltoaction-color-2);
+        border-radius: 100px;
+        border: none;
+        padding: 15px 25px;
+        text-align: center;
+        font-size: $medium-font-size;
+        margin: 4px 2px;
+        cursor: pointer;
+        margin-bottom: 50px; /* Vous pouvez ajuster la valeur en fonction de l'espace souhaité */
+        margin-top: 20px;
+        
+    }
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 50px; 
+    
+}
+
+
+
+.titre1 {
+    display: flex;
+    align-items: center; /* Aligner les éléments au centre verticalement */
+}
+
+.titre1 i {
+    margin-left: 10px; /* Ajoutez une marge à gauche pour séparer l'icône du texte */
+}
+
+/* Ajoutez d'autres styles selon vos besoins */
+
+
+.titre1 i {
+    margin-left: 80px; /* Ajoutez une marge à gauche pour séparer l'icône du texte */
+    color: black; /* Définissez la couleur de l'icône en noir */
+}
+
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 50px 0;
+    gap: 30px;
+}
+
+
+
+.choix {
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 17px 10px;
+    background-color: $background-gray;
+    border-radius: 20px; 
+    width: 87%;
+    
+    box-shadow: 0 4px 4px -1px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+    
+    span {
+        position : absolute;
+        left: -10px;
+        
+    }
+    
+    i{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+
+
+.categories .choix span.material-symbols-outlined {
+    padding: 0 10px; /* Ajustez la valeur selon l'espace souhaité à gauche et à droite */
+}
+
+/* Vous pouvez également ajouter de l'espace au-dessus et en dessous si nécessaire */
+.categories .choix span.material-symbols-outlined {
+    padding: 20px 20px; /* Ajoutez de l'espace en haut et en bas */
+}
+
+.categories .choix span.material-symbols-outlined {
+    padding: 0 10px; /* Ajustez la valeur selon l'espace souhaité à gauche et à droite */
+    transition: color 0.3s; /* Ajoute une transition de couleur fluide */
+}
+
+.categories .choix span.material-symbols-outlined:hover {
+    color: #9356DC; /* Changez la couleur au survol */
+}
+
+.cartes {
+    margin-bottom: 50px;
+    gap: 17px;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin:20px;
+}
+
+.menu2 {
+    position: relative;
+    margin-top: 0px;
+}
+
+.menu2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 35px; /* Ajustez la longueur du trait selon vos besoins */
+    height: 2px; /* Ajustez l'épaisseur du trait selon vos besoins */
+    background-color: #99E2D0; /* Couleur du trait */
+    top: 18px;
+}
+
+
+.footer2{
+    flex-direction: column;
+    display : flex;
+}
+
+.footer-gris {
+    h4{
+        margin-top: 0.6rem;
+    }
+}
+.numero {
+    background-color: #9356DC;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    color: white;
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+h1 {
+    font-family: Shrikhand;
+    color: black;
+
+}
+
+h2 {
+    color: black;
+}
+
+.choix2 {
+    color: black;
+    margin-bottom: 0px;
+}
+
+.cmenu {
+    color: black;
+}
+
+
+
+.selection-title {
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+
+.selection-subtitle{
+    margin-left: 20px;
+}
+.repas , .repas2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+    border-radius: 20px;
+    
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    
+    
+    
+    img {
+        width: 100%;
+        align-self: center;
+        height: 260px;
+        background-size: cover;
+    }
+    
+    
+    
+    .fa-regular {
+        margin-top : 20px;
+        margin-right : 25px;
+    }
+    
+    .fa-solid {
+        margin-top : 20px;
+        margin-right : 25px;
+    }
+    
+    .selection {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        
+        .selection-txt {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            color: black;
+        }
+    }
+    h1, h4 {
+        font-family: 'Shrikhand', cursive;
+        /* Ajoutez d'autres propriétés CSS au besoin */
+    } 
+    
+}
+
+h4 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 20px;
+}
+
+.cmenu p {
+    font-size: 11px; /* Ajustez la taille de la police selon vos préférences */
+}
+
+.prix {
+    font-size: 11px;
+    padding-top: 20px;
+}
+
+.choix2 {
+    font-size: 14px;
+}
+
+
+p {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.cmenu {
+    background-color: #fff; /* Couleur de fond en blanc */
+    border-radius: 10px; /* Coins arrondis (ajustez la valeur selon vos préférences) */
+    padding: 15px; /* Espacement à l'intérieur de la div */
+    margin-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.contact {
+    color:#ffffff;
+}
+
+.material-symbols-outlined {
+    padding-top: 5px;
+}
+
+.badge-container {
+    position: relative;
+    display: inline-block;
+    width : 100%;
+}
+
+.badge {
+    position: absolute;
+    top: 10px; /* Ajustez la position verticale selon vos besoins */
+    right: 10px; /* Ajustez la position horizontale pour le coin supérieur droit */
+    background-color:#99E2D0;
+    ; /* Fond vert clair */
+    color: #008766;
+    ; /* Texte vert foncé */
+    padding: 5px 10px; /* Ajustez le rembourrage selon vos besoins */
+    border-radius: 0px; /* Coins arrondis */
+    font-weight: bold;
+}
+
+.rest {
+    padding-top: 8px;
+    padding-bottom : 42px;
+}
+
+.menu2 {
+    font-weight: normal; 
+    font-size: 13px; 
+}
+
+.titre1 {
+    font-size: 18px; /* Ajustez la taille du texte selon vos besoins */
+}
+
+.titre1 i {
+    margin-left: 50px;
+    font-size: 24px; /* Ajustez la taille de l'icône selon vos besoins */
+    color: black;
+}
+
+/* Ajoutez d'autres styles selon vos préférences */
+
+header {
+    position: relative;
+}
+
+.palette {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #F6F6F6;
+    padding: 20px; 
+    box-sizing: border-box;
+    position: relative;
+    
+    &::before{
+        content:"";
+        width: 100%;
+        height: 30px;
+        background-color: #f6F6F6;
+        position: absolute;
+        top: -30px;
+        left: 0;
+        border-radius: 30px 30px 0 0;
+        
+    }
+}
+
+.cmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cmenu{
+    div:nth-of-type(2){
+        display: flex;
+        align-items: end;
+        
+        .prix {
+            font-size: 11px;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: $footer-background-color;
+    padding: 30px 30px;
+    color: white;
+    
+    img{
+        height: 20px;
+        width: 100px;
+    }
+    
+    div{
+        display: flex;
+        justify-content: start;
+        
+        i{
+            margin-right: 5px;
+        }
+    }
+    
+    footer a {
+        color: white !important; /* Couleur du texte en blanc avec !important */
+        text-decoration: none; /* Pour supprimer le soulignement */
+    }
+    
+    .selection-txt {
+        align-items: center;
+    }
+    
+    .selection-title {
+        margin-right: 10px; /* Ajustez la marge selon vos préférences */
+    }
+    
+    .material-symbols-outlined {
+        padding-right: 10px; /* Ajustez la marge selon vos préférences */
+    }
+    
+    .palette {
+        background-color: #F6F6F6;
+        ;
+    }
+    
+    h1{
+        color:black;
+    }
+    
+    
+    
+}
+
+#icone:hover {
+    color: #9356DC;
+    
+}
+
+#hero-section2 {
+    color: white;
+    background: linear-gradient(to bottom, #e06fda, #a65cdb);
+    border-radius: 100px;
+    border: none;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#hero-section:hover {
+    /* Ajoutez des styles pour l'état survolé si nécessaire */
+}
+
+.menu0 {
+    margin: 20px; /* Ajoute une marge de 20 pixels en haut et en bas, ajustez la valeur selon vos besoins */
+    margin-top: 40px;
+}
+
+.repas {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.repas img {
+    width: 100%;
+    height: 150px; /* Définissez la hauteur souhaitée, ajustez la valeur selon vos besoins */
+    object-fit: cover; /* Garde les proportions et coupe l'image pour l'adapter à la boîte */
+}
+
+.bt2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (min-width: 768px) {
+    
+    .cartes {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .badge-container {
+        width: 45%;
+        box-sizing: border-box;
+    }
+    
+    h2{
+    
+        margin-top: 0px; 
+        
+    }
+
+    .repas img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    
+    .footer2{
+        flex-direction: row;
+    }
+
+    .footer-gris{
+        flex-direction : row-reverse;
+        align-items: flex-end;
+
+    }
+
+    .footer-gris div,
+    .footer-gris p,
+    .footer-gris a {
+        margin-left: 10px; /* Espace horizontal entre les éléments */
+    }
+
+    h4 {
+        font-size: 0.8rem;
+        margin: 0 15px;
+    }
+
+    main {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .titre1 {
+
+        text-align: center;
+        margin-top: 0px;
+        justify-content: center;
+        
+          
+    }
+    
+    
+    .repas2 {
+        width: 100%;
+    }
+    
+    img{
+        object-fit: cover;
+    }
+    
+    .palette {
+        width: 85%;
+        height: 1000px;
+        flex-shrink: 0;
+        padding : 30px;
+        flex-direction : column;
+        padding-top: 5px;
+        
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    
+ 
+.palette{
+    padding-right: 250px;
+    padding-left: 250px;
+}
+  
+    .choix {
+        width:100%;
+    }
+
+    .Fonction {
+        display: flex;
+        padding: 50px 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        align-self: stretch;
+        background: #FFF
+    }
+    
+    .choix {
+        width: 25%;
+        height: 45px;
+        flex-shrink: 0;
+        border-radius: 20px;
+        background: var(--Background, #F6F6F6);
+        /* Shadow/Instructions */
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    }
+    
+    .cartes {
+        display: flex;
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne lorsque l'espace est insuffisant */
+        flex-direction: row;
+        width: 93%;
+        justify-content: center;
+        
+    }
+
+    .menu0 {
+        margin-left: 110px; 
+    }
+    
+    .repas {
+        width: 100%; /* Chaque article occupera 50% de la largeur du conteneur parent */
+        box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur spécifiée */
+        padding: 10px; /* Ajoute un espace intérieur autour des articles */
+        
+    }
+    
+    /* Optionnel: ajuster le style des éléments enfants */
+    .selection {
+        display: flex;
+        justify-content: space-between; /* Espacement égal entre les éléments internes */
+        align-items: center; /* Aligner verticalement les éléments internes */
+    }
+    
+    
+    
+   
+    
+    
+    .categories {
+        
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    
+    .repas img, .repas2 img {
+        height: 380px;
+    }
+}
