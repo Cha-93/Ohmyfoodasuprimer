@@ -1,0 +1,862 @@
+$background-gray: #f6f6f6
+$location-background-color: #eaeaea
+$navbar-color: #ffffff
+$footer-background-color: #353535
+
+$calltoaction-color-1: #e06fda
+$calltoaction-color-2: #a65cdb
+
+$small-font-size: 12px
+$medium-font-size: 14px
+$large-font-size: 18px
+
+html, body
+    margin: 0
+    padding: 0
+    
+    font-family: 'Roboto', sans-serif
+    font-weight: 400
+
+.loading-container
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+    background-color: rgba(255, 255, 255, 0.7)
+    z-index: 99
+    animation: closeLoading 3s forwards
+
+    .loading
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 150px
+        height: 25px
+        background-color: rgba(0, 0, 0, 0.1)
+
+        span
+            position: absolute
+            width: 50px
+            height: 25px
+            background: $calltoaction-color-1
+            animation: loading 3s forwards
+
+
+
+.header-arrow
+    position: absolute
+    top:50%
+    transform: translateY(-50%)
+    color: black
+
+
+.menu-like
+    i
+        margin: 0 !important
+
+.menu-like, .repas-like
+    position: relative
+    width: 30px
+    margin-left: 15px
+    margin-bottom: 22px    
+
+    i
+        position: absolute
+    
+    .like-bg
+        z-index: -1
+        background: linear-gradient(to bottom, #e06fda, #a65cdb)
+        background-clip: text
+        -webkit-text-fill-color: transparent
+        opacity: 0
+        transition: 0.4s opacity
+    
+    &:hover
+        .like
+            opacity: 0
+            transition: 0.4s opacity
+        
+        .like-bg
+            opacity: 1
+            z-index: 80
+        
+    
+
+
+#hero-section2
+    transition: 0.4s
+    box-shadow: 0 10px 15px -9px rgba(0, 0, 0, 0.3)
+    &:hover 
+        opacity: 0.8
+    
+
+
+.button-text
+    transition: 0.4s
+    box-shadow: 0 10px 15px -9px rgba(0, 0, 0, 0.3)
+    &:hover 
+        opacity: 0.8
+    
+
+
+.numero 
+    background-color: #9356DC
+    border-radius: 50%
+
+
+.menu-animation 
+    display: flex
+    flex-direction: row
+    margin-bottom: 20px
+    overflow: hidden
+    border-radius: 10px
+    animation-name: cardAnimation
+    animation-duration: 1s
+    animation-fill-mode: forwards
+    
+    &:hover 
+        .menu-button
+            animation-name: anim-menu-button 
+            animation-duration: 0.4s
+            animation-fill-mode: forwards
+        .menu-header
+            width: 26%
+        
+    
+
+
+
+.menu-button
+    background-color:#99E2D0
+    align-items: center
+    justify-content: center
+    width: 0
+    opacity: 0%
+    display: flex
+    transition: 2s
+    
+    i
+        color:#F6F6F6
+    
+
+
+body
+    section:nth-of-type(2) 
+        background-color: $background-gray
+    
+    
+    header
+        i
+            z-index: 9999
+            top: 10px
+            left: 10px
+        
+    
+
+
+#navbar
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-bottom: 20px
+    padding-top: 20px
+    background-color: $navbar-color
+    box-shadow: 0 4px 4px -1px rgba(0, 0, 0, 0.1)
+    position: relative
+    z-index: 80
+    
+    img
+        height: 30px
+    
+
+
+#location
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $location-background-color
+    padding-top: 5px
+    padding-bottom: 5px
+    position: relative
+    
+    font-family: 'Roboto', sans-serif
+    font-weight: 700
+    
+    i
+        padding-right: 5px
+    
+
+
+#hero-section
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    text-align: center
+    
+    background-color: $background-gray
+    
+    h1  
+        font-family: 'Roboto', sans-serif
+        font-weight: 700
+        max-width: 10000px
+    
+    
+    p
+        color: darkslategray
+        width: 300px
+    
+    
+    button
+        color: white
+        
+        background: linear-gradient(to bottom, $calltoaction-color-1, $calltoaction-color-2)
+        border-radius: 100px
+        border: none
+        padding: 15px 25px
+        text-align: center
+        font-size: $medium-font-size
+        margin: 4px 2px
+        cursor: pointer
+        margin-bottom: 50px
+        margin-top: 20px
+        
+    
+
+
+h2
+    font-family: 'Roboto', sans-serif
+    font-weight: 700
+    margin-top: 50px
+
+
+
+
+.titre1 
+    font-size: 18px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    
+    i 
+        color: black
+        margin-left: 50px
+        font-size: 24px
+        color: black
+    
+
+
+
+.categories
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 0 0 50px 0
+    gap: 30px
+
+
+.choix 
+    font-weight: 700
+    display: flex
+    align-items: center
+    justify-content: start
+    padding: 17px 10px
+    background-color: $background-gray
+    border-radius: 20px 
+    width: 87%
+    
+    box-shadow: 0 4px 4px -1px rgba(0, 0, 0, 0.1)
+    position: relative
+    z-index: 80
+    
+    span 
+        position : absolute
+        left: -10px
+    
+    
+    i
+        margin-left: 20px
+        margin-right: 20px
+    
+    
+    &:hover
+        i
+            color: #9356DC
+        
+    
+
+
+
+
+.categories .choix span.material-symbols-outlined 
+    padding: 0 10px
+
+
+.categories .choix span.material-symbols-outlined 
+    padding: 20px 20px
+
+
+.categories .choix span.material-symbols-outlined 
+    padding: 0 10px
+    transition: color 0.3s
+
+
+.categories .choix span.material-symbols-outlined:hover 
+    color: #9356DC
+
+
+.cartes 
+    margin-bottom: 50px
+    gap: 17px
+    justify-content: center
+    flex-wrap: wrap
+    display: flex
+    flex-direction: column
+    align-content: center
+    margin:20px
+
+
+.menu2 
+    position: relative
+    margin-top: 0px
+
+
+.menu2::after 
+    content: ""
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 35px
+    height: 2px
+    background-color: #99E2D0
+    top: 18px
+
+
+.footer2
+    flex-direction: column
+    display : flex
+
+
+.footer-gris 
+    h4
+        margin-top: 0.6rem
+    
+
+
+.numero 
+    background-color: #9356DC
+    border-radius: 50%
+    width: 20px
+    height: 20px
+    justify-content: center
+    display: flex
+    align-items: center
+    color: white
+    font-weight: normal
+    font-size: 0.8rem
+
+
+h1 
+    font-family: Shrikhand
+    color: black
+
+
+h2 
+    color: black
+
+
+.choix2 
+    color: black
+    margin-bottom: 0px
+
+
+.cmenu 
+    color: black
+
+
+.selection-title 
+    margin-bottom: 0px
+    margin-left: 20px
+
+
+.selection-subtitle
+    margin-left: 20px
+
+
+.repas, .repas2 
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    background-color: white
+    border-radius: 20px
+    
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1))
+    
+    img 
+        width: 100%
+        align-self: center
+        height: 260px
+        background-size: cover
+    
+    
+    .fa-regular 
+        margin-top : 20px
+        margin-right : 25px
+    
+    
+    .fa-solid 
+        margin-top : 20px
+        margin-right : 25px
+    
+    
+    .selection 
+        display: flex
+        justify-content: space-between
+        width: 100%
+        
+        .selection-txt 
+            display: flex
+            flex-direction: column
+            margin: 0
+            padding: 0
+            text-decoration: none
+            color: black
+        
+    
+    h1, h4 
+        font-family: 'Shrikhand', cursive
+     
+    
+
+
+h4 
+    font-family: 'Shrikhand', cursive
+    font-size: 20px
+
+
+.prix 
+    font-size: 11px
+    padding-top: 20px
+
+
+.choix2 
+    font-size: 14px
+
+
+p 
+    margin-top: 2px
+    margin-bottom: 2px
+
+
+.cmenu 
+    background-color: #fff
+    padding: 15px
+    padding-top: 0px
+    padding-bottom: 10px
+    overflow: hidden
+    text-overflow: ellipsis
+    
+    p 
+        font-size: 11px
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+        width:100%
+
+    h3
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+    
+    
+    .menu-header
+        overflow: hidden
+        text-overflow: ellipsis
+        width: 100%
+    
+
+
+
+a 
+    text-decoration: none
+
+
+.contact 
+    color:#ffffff
+
+
+.material-symbols-outlined 
+    padding-top: 5px
+
+
+.badge-container 
+    position: relative
+    display: inline-block
+    width : 100%
+
+
+.badge 
+    position: absolute
+    top: 10px
+    right: 10px
+    background-color:#99E2D0
+    color: #008766
+    padding: 5px 10px
+    border-radius: 0px
+    font-weight: bold
+
+
+.rest 
+    padding-top: 8px
+    padding-bottom : 42px
+
+
+.menu2 
+    font-weight: normal 
+    font-size: 13px 
+
+
+header 
+    position: relative
+
+
+.palette 
+    top: 0
+    left: 0
+    width: 100%
+    background-color: #F6F6F6
+    padding: 20px 
+    box-sizing: border-box
+    position: relative
+    
+    &::before
+        content:""
+        width: 100%
+        height: 30px
+        background-color: #f6F6F6
+        position: absolute
+        top: -30px
+        left: 0
+        border-radius: 30px 30px 0 0
+        
+    
+
+
+.cmenu
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    flex-grow:1
+
+
+.cmenu
+    div:nth-of-type(2)
+        display: flex
+        align-items: end
+        
+        .prix 
+            font-size: 11px
+        
+    
+
+
+footer
+    display: flex
+    flex-direction: column
+    background-color: $footer-background-color
+    padding: 30px 30px
+    color: white
+    
+    img
+        height: 20px
+        width: 100px
+    
+    
+    div
+        display: flex
+        justify-content: start
+        
+        i
+            margin-right: 5px
+        
+    
+    
+    footer a 
+        color: white !important
+        text-decoration: none
+    
+    
+    .selection-txt 
+        align-items: center
+    
+    
+    .selection-title 
+        margin-right: 10px
+    
+    
+    .material-symbols-outlined 
+        padding-right: 10px
+    
+    
+    .palette 
+        background-color: #F6F6F6
+        
+    
+    
+    h1
+        color: black
+    
+    
+    
+    
+
+
+#icone:hover 
+    color: #9356DC
+    
+
+
+#hero-section2 
+    color: white
+    background: linear-gradient(to bottom, #e06fda, #a65cdb)
+    border-radius: 100px
+    border: none
+    padding: 15px 25px
+    text-align: center
+    font-size: 14px
+    margin: 4px 2px
+    cursor: pointer
+
+
+.menu0 
+    margin: 20px
+    margin-top: 40px
+
+
+.repas 
+    overflow: hidden
+    padding-bottom: 20px
+
+
+.repas img 
+    width: 100%
+    height: 150px
+    object-fit: cover
+
+
+.bt2 
+    display: flex
+    justify-content: center
+
+
+#fix-height
+    height: 1058px
+
+
+
+@media (min-width: 768px) 
+    
+    .cartes 
+        display: flex
+        flex-direction: row
+        width: 100%
+        margin: 20px 0
+    
+    
+    .badge-container 
+        width: 45%
+        box-sizing: border-box
+    
+    
+    h2
+        
+        margin-top: 0px 
+        
+    
+    
+    .repas img 
+        width: 100%
+        height: 200px
+        object-fit: cover
+    
+    
+    
+    main 
+        width: 100% !important
+        display: flex !important
+        flex-direction: column
+        align-items: center
+    
+    
+    .titre1 
+        
+        text-align: center
+        margin-top: 0px
+        justify-content: center
+        
+        
+    
+    
+    .repas2 
+        width: 100%
+    
+    
+    img
+        object-fit: cover
+    
+    
+    .palette 
+        width: 75%
+        height: 1000px
+        flex-shrink: 0
+        padding: 30px
+        flex-direction: column
+        padding-top: 5px
+        
+    
+
+
+
+@media (min-width: 1024px) 
+    
+
+    .contact
+        margin-right:62px
+
+    .footer2
+        flex-direction: row
+
+    h4 
+        font-size: 0.8rem
+        margin: 0 15px
+    
+    
+    
+    .footer-gris
+        flex-direction : row-reverse
+        align-items: flex-end
+        
+    
+    
+    .footer-gris div,
+    .footer-gris p,
+    .footer-gris a 
+        margin-left: 10px
+    
+    
+    .palette
+        padding-right: 200px
+        padding-left: 200px
+    
+    
+    .choix 
+        width:100%
+    
+    
+    .Fonction 
+        display: flex
+        padding: 50px 0px
+        flex-direction: column
+        align-items: flex-start
+        gap: 25px
+        align-self: stretch
+        background: #FFF
+    
+    
+    .choix 
+        width: 25%
+        height: 45px
+        flex-shrink: 0
+        border-radius: 20px
+        background: var(--Background, #F6F6F6)
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15)
+    
+    
+    .cartes 
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        width: 85%
+        justify-content: space-between
+        gap: 50px
+        margin: 0 auto
+
+        .badge-container 
+            width: 560px
+        
+    
+    
+    .menu0 
+        margin-left: 110px 
+    
+    
+    .repas 
+        width: 100%
+        box-sizing: border-box
+        
+    
+    
+
+    .selection 
+        display: flex
+        justify-content: space-between
+        align-items: center
+    
+    
+    #hero-section
+        p
+            width: 100%
+        
+    
+    
+    
+    
+    .categories 
+        
+        flex-direction: row
+        width: 100%
+        justify-content: center
+    
+    
+    
+    .repas img, .repas2 img 
+        height: 200px
+    
+
+
+
+
+@keyframes anim-menu-button
+    from
+        width: 0
+        opacity: 0%
+    
+    to
+        width: 65px
+        opacity: 100%
+
+
+@keyframes loading 
+    from
+        left: 0
+
+    to
+        left: 100px
+
+@keyframes closeLoading
+    from
+        display: block
+    to
+        display: none
+
+
+@keyframes cardAnimation
+    from
+        opacity: 0
+        transform: translateY(-50px)
+    
+    to
+        opacity: 100%
+        transform: translateY(0)
