@@ -14,13 +14,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@300;400&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Roboto:wght@300;400&family=Shrikhand&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <i class="fa-solid fa-arrow-left"></i>
+        <a href="./index.html">
+            <i class="fa-solid fa-arrow-left header-arrow"></i>
+        </a>
         <div id="navbar">
             <img src="../images/logo/ohmyfood.png" alt="Logo de l'entreprise">
         </div>
@@ -31,117 +33,183 @@
         </article>
         <section class="palette">
             <div class="titre1">
-                <H1>À la française</h1>
-                <i class="fa-regular fa-heart"></i>
-            </div>
-        <article>
-                <h2 class="menu2">ENTREES</h2>
-            <div class="cmenu">
-            <div>
-                <h3 class="choix2"><strong>Tartare de poulpe acidulé</strong></h3>
-                <p class="selections">Au zestes d'orange</p>
-            </div>
-            <div>
-                <span class="prix"><strong>25€</strong></span>
-            </div>
-            </div>
-                    
-            <div class="cmenu">
-            <div>
-                <h3 class="choix2"><strong>Velouté de légume d'antan</strong></h3>
-                <p class="selections">Carotte, panais, topinambour</p>
-            </div>
-            <div>
-                <span class="prix"><strong>35€</strong></span>
-            </div>
-            </div>
-                    
-            <div class="cmenu">
-            <div>
-                <h3 class="choix2"><strong>Soupe à l'oignon</strong></h3>
-                <p class="selections">Revisitée</p>
-            </div>
-            <div>
-                <span class="prix"><strong>20€</strong></span>
-            </div>
-            </div>
-        </article>
-        <article>
-                <h2 class="menu2">PLATS</h2>
-            <div class="cmenu">
-            <div>
-                <h3 class="choix2"><strong>Coquilles Saint-Jacques</strong></h3>
-                <p class="selections">Accompagné d'une purée de panais'</p>
-            </div>
-            <div>
-                <span class="prix"><strong>40€</strong></span>
-            </div>
-            </div>
-            <div class="cmenu">
-            <div>
-                <h3 class="choix2"><strong>Magret de canard</strong></h3>
-                <p class="selections">Et parmentier de pommes de terre</p>
-            </div>
-            <div>
-                <span class="prix"><strong>35€</strong></span>
-            </div>
-            </div>      
-            <div class="cmenu">
-            <div>
-                <h3 class="choix2"><strong>Pigeonneau d'Ille et Vilaine</strong></h3>
-                <p class="selections">Sur son lit de gnocchis aux légumes</p>
-            </div>
-            <div>
-                <span class="prix"><strong>44€</strong></span>
-            </div>
-            </div>
-        </article>
-        <article>
-                <h2 class="menu2">DESSERTS</h2>
-            <div class="cmenu">
-            <div>
-                <h3 class="choix2"><strong>Pétales de violettes glacés</strong></h3>
-                <p class="selections">Et purée de noisettes</p>
-            </div>
-            <div>
-                <span class="prix"><strong>18€</strong></span>
+                <h1>À la française</h1>
+                <div class="menu-like">
+                    <i class="fa-regular fa-heart like"></i>
+                    <i class="fa-solid fa-heart like-bg"></i>
                 </div>
             </div>
-            <div class="cmenu">
-            <div>
-                <h3 class="choix2"><strong>Fondant au chocolat</strong></h3>
-                <p class="selections">Revisité</p>
-            </div>
-            <div>
-                <span class="prix"><strong>22€</strong></span>
-            </div>
-            </div> 
-            <div class="cmenu">
-            <div>
-                <h3 class="choix2"><strong>Millefeuille croustillant</strong></h3>
-                <p class="selections">Myrtilles et pâte d'amande</p>
-            </div>
-            <div>
-                <span class="prix"><strong>23€</strong></span>
-            </div>
-            </div>
-        </article>
-                <button id="hero-section2" type="submit" class="button-text"><b>Commander</b></button>    
+            <article>
+                <h2 class="menu2">ENTREES</h2>
+                
+                <div class="menu-animation">
+                    <div class="cmenu">
+                        <div class="menu-header">
+                            <h3 class="choix2"><strong>Tarte de poulpe acidulé</strong></h3>
+                            <p class="selections">Au zestes d'orange</p>
+                        </div>
+                        <div>
+                            <span class="prix"><strong>25€</strong></span>
+                        </div>
+                    </div>
+                    <div class= "menu-button">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>  
+                
+                
+                
+                <div class="menu-animation">
+                    <div class="cmenu">
+                        <div class="menu-header">
+                            <h3 class="choix2"><strong>Veloudé de légume d'antan</strong></h3>
+                            <p class="selections">Carotte, panais, topinambour</p>
+                        </div>
+                        <div>
+                            <span class="prix"><strong>35€</strong></span>
+                        </div>
+                    </div>
+                    <div class= "menu-button">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>  
+                
+                <div class="menu-animation">
+                    <div class="cmenu">
+                        <div class="menu-header">
+                            <h3 class="choix2"><strong>Soupe à l'oignon</strong></h3>
+                            <p class="selections">Revisitée</p>
+                        </div>
+                        <div>
+                            <span class="prix"><strong>20€</strong></span>
+                        </div>
+                    </div>
+                    <div class= "menu-button">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>  
+            </article>
+            
+            <article>
+                <h2 class="menu2">PLATS</h2>
+                
+                
+                <div class="menu-animation">
+                    <div class="cmenu">
+                        <div class="menu-header">
+                            <h3 class="choix2"><strong>Coquilles Saint-Jacques</strong></h3>
+                            <p class="selections">Accompagnées d'une purée de panais</p>
+                        </div>
+                        <div>
+                            <span class="prix"><strong>40€</strong></span>
+                        </div>
+                    </div>
+                    <div class= "menu-button">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>  
+                
+                <div class="menu-animation">
+                    <div class="cmenu">
+                        <div class="menu-header">
+                            <h3 class="choix2"><strong>Magret de canard</strong></h3>
+                            <p class="selections">Et parmentier de pommes de terre</p>
+                        </div>
+                        <div>
+                            <span class="prix"><strong>35€</strong></span>
+                        </div>
+                    </div>  
+                    <div class= "menu-button">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>      
+                
+                
+                <div class="menu-animation">
+                    <div class="cmenu">
+                        <div class="menu-header">
+                            <h3 class="choix2"><strong>Pigeonneau d'Ille et Vilaine</strong></h3>
+                            <p class="selections">Sur son lit de gnochis aux légumes</p>
+                        </div>
+                        <div>
+                            <span class="prix"><strong>44€</strong></span>
+                        </div>
+                    </div>
+                    <div class= "menu-button">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>  
+            </article>
+            <article>
+                <h2 class="menu2">DESSERTS</h2>
+                
+                <div class="menu-animation">
+                    <div class="cmenu">
+                        <div class="menu-header">
+                            <h3 class="choix2"><strong>Pétales de violettes glacés</strong></h3>
+                            <p class="selections">Et purée de noisettes</p>
+                        </div>
+                        <div>
+                            <span class="prix"><strong>18€</strong></span>
+                        </div>
+                    </div>
+                    <div class= "menu-button">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>  
+                
+                
+                <div class="menu-animation">
+                    <div class="cmenu">
+                        <div class="menu-header">
+                            <h3 class="choix2"><strong>Fondant au chocolat</strong></h3>
+                            <p class="selections">Revisité</p>
+                        </div>
+                        <div>
+                            <span class="prix"><strong>22€</strong></span>
+                        </div>
+                    </div> 
+                    <div class= "menu-button">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>  
+                
+                
+                <div class="menu-animation">
+                    <div class="cmenu">
+                        <div class="menu-header">
+                            <h3 class="choix2"><strong>Millefeuille croustillant</strong></h3>
+                            <p class="selections">Myrtilles et pâtes d'amande</p>
+                        </div>
+                        <div>
+                            <span class="prix"><strong>23€</strong></span>
+                        </div>
+                    </div>
+                    <div class= "menu-button">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </div>  
+                
+            </article>
+            <div class="bt2">
+                <button id="hero-section2" type="submit" class="button-text"><b>Commander</b></button>  
+            </div>  
         </section>
-        </main>
-        <footer class="footer-gris">
-            <h4>ohmyfood</h4>
+    </main>
+    <footer class="footer-gris"> <!-- Flex, column => Mediaquery(768): row-reverse -->
+        <h4>ohmyfood</h4>
+        <div class = "footer2"> <!-- Flex, column => Mediaquery(768): row -->
             <div>
                 <i class="fa-solid fa-utensils"></i>
-                <p><b>Proposer un restaurant</b></p>
+                <p>Proposer un restaurant</p>
             </div>
             <div>
                 <i class="fa-regular fa-handshake"></i>
-                <p><b>Devenir partenaire</b></p>
+                <p>Devenir partenaire</p>
             </div>
             <p>Mentions légales</p>
             <a href="mailto:adresse@email.com" class="contact">contact</a>
-        </footer>
-    </body>
-    </html>
-    
+        </div>
+    </footer>
+</body>
+</html>
